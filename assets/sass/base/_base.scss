@@ -1,0 +1,32 @@
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; 
+    scroll-behavior: smooth;
+   
+}
+
+body {
+    box-sizing: border-box;
+    background-color: $color-white;
+}
+
+
+section {
+    padding: 8rem 0;
+}
+
+
+a:link,
+a:visited,
+a {
+    text-decoration: none;
+    color: $color-text-primary;
+}

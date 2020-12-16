@@ -1,0 +1,68 @@
+.navigation {
+    
+    box-shadow: 0 .1rem .8rem rgba($color-black, .2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: $color-white;
+    transition: all .4s ease-in-out;
+    right: 0;
+
+    &_nav {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    &_logo {
+        &--link,
+        &--link:link,
+        &--link:visited,
+        &--link:active {
+            text-decoration: none;
+            color: $color-primary;
+            font-size: 2.5rem;
+            font-weight: 700    
+        }
+
+        &--img {
+            width: 20rem;
+        }
+    }
+
+
+    &_list {        
+        display: flex;
+        list-style: none;
+        transition: height .3s ease-in-out;
+    }
+
+    &_link {
+        color: rgba(black, .8) ;
+        border-bottom: 3px solid transparent;
+        transition: all .4s ease-in-out;
+    }
+
+    &_link:hover {
+        color: rgba($color: $color-black, $alpha: 1);
+        border-bottom: 3px solid rgba($color: $color-primary, $alpha: .8);
+    }
+
+    &_item {
+        margin: 3rem;
+    }
+
+    &_link {
+        display: inline-block;
+        font-size: 1.8rem;
+    }
+
+    &_link:hover {
+        color: darken($color-text-primary, 1.5);
+    }
+
+}
