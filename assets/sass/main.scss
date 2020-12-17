@@ -1,5 +1,3 @@
-
-@import "variables/color.scss";
-@import "base/base";
-@import "layout/navigation";
-@import "element/container";
+@import "abstracts/variables";
+@import "libs/reset";
+@import "abstracts/mixins";
