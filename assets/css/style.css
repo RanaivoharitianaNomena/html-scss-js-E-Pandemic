@@ -87,6 +87,8 @@ header .epandem-info {
 header .epandem-info p {
   font-size: 18px;
   margin: 20px 0;
+  background-color: #5d5d77;
+  color: white;
 }
 header .epandem .cov-background {
   background-image: url("/assets/img/slide/sld1.jpg");
