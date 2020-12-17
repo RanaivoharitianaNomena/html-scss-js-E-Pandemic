@@ -35,11 +35,13 @@ textarea {
   outline: none;
 }
 
+/* FLEXBOX MIXINS */
+/* CSS GRID MIXINS */
 .btn {
   display: inline-block;
   padding: 10px;
   background-color: #ffffff;
-  color: #45489a;
+  color: #5AACD7;
   font-size: 20px;
   text-align: center;
 }
@@ -47,7 +49,7 @@ textarea {
   cursor: pointer;
 }
 .btn.primary {
-  background-color: #45489a;
+  background-color: #5AACD7;
   color: #ffffff;
 }
 
@@ -55,6 +57,7 @@ header {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  animation: zoomin 13s ease-in-out infinite alternate;
 }
 header .menu-toggle {
   position: fixed;
@@ -63,37 +66,55 @@ header .menu-toggle {
   padding: 0 10px;
   z-index: 99;
 }
+@media (min-width: 768px) {
+  header .menu-toggle {
+    padding-right: 50px;
+  }
+}
+@media (min-width: 992px) {
+  header .menu-toggle {
+    display: none;
+  }
+}
 header .menu-toggle .btn {
   padding: 10px 13px;
 }
-header .epandem {
+header .slideshow {
   width: 100%;
   height: 100vh;
   position: relative;
   overflow: hidden;
 }
-header .epandem-info {
+header .slideshow-info {
   position: absolute;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
   max-width: 600px;
   padding-right: 10px;
-  color: #191c4e;
+  color: midnightblue;
   text-align: right;
   font-size: 28px;
   z-index: 3;
 }
-header .epandem-info p {
+@media (min-width: 768px) {
+  header .slideshow-info {
+    padding-right: 50px;
+  }
+}
+@media (min-width: 992px) {
+  header .slideshow-info {
+    padding-right: 100px;
+  }
+}
+header .slideshow-info p {
   font-size: 18px;
   margin: 20px 0;
-  background-color: #5d5d77;
-  color: white;
 }
-header .epandem .cov-background {
-  background-image: url("/assets/img/slide/sld1.jpg");
+header .slideshow .slide-1 {
+  background-image: url("./image/4.jpg");
 }
-header .epandem .img_home {
+header .slideshow .slides {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -101,11 +122,67 @@ header .epandem .img_home {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  filter: opacity(0.7);
 }
-header .epandem .img_home.active {
+header .slideshow .slides.active {
   position: relative;
   visibility: visible;
   filter: opacity(1);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 100vh;
+  background-color: rgba(12, 12, 12, 0.9);
+  color: #ffffff;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transition: all 0.3s ease-in-out;
+}
+.sidebar .logo {
+  align-self: stretch;
+  padding: 20px;
+  background-color: #5AACD7;
+}
+.sidebar .logo h1 {
+  padding: 25px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+}
+.sidebar .logo h1 span {
+  font-weight: bold;
+}
+.sidebar-menu {
+  padding: 40px;
+}
+.sidebar-menu li {
+  margin: 10px 0;
+  padding: 10px 0;
+  width: 180px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.sidebar-menu li a {
+  color: #ffffff;
+}
+.sidebar .sidebar-cpy {
+  text-align: center;
 }
 
 main section {
@@ -117,7 +194,7 @@ main section h1 {
 }
 main section h1 span {
   display: block;
-  color: #45489a;
+  color: #5AACD7;
 }
 main section p {
   width: 300px;
