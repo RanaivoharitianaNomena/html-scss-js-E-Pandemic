@@ -1,0 +1,20 @@
+.btn{
+    display: inline-block;
+    background-color: white;
+    color: $primary-color;
+    text-align: center;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    &.primary{
+        background-color: $primary-color;
+        color: white;
+    }
+
+    &.secondary{
+        background-color: $secondary-color;
+        color: white;
+    }
+}
