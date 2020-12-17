@@ -1,6 +1,28 @@
 @import "abstracts/variables";
 @import "libs/reset";
-@import "abstracts/mixins";
+// @import "abstracts/mixins";
 @import "base/utilities";
 
 @import "sections/header";
+
+main {
+   
+    section {
+      padding: $container-padding;
+  
+      h1 {
+        margin-right: 100px;
+        font-size: 30px;
+  
+        span {
+          display: block;
+          color: $primary-color;
+        }
+      }
+  
+      p {
+        width: 300px;
+        font-size: 15px;
+      }
+    }
+}

@@ -1,31 +1,65 @@
-  header {
+header {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  
+    .menu-toggle {
+      position: fixed;
+      top: 50px;
+      right: 0px;
+      padding: 0 $container-padding;
+      z-index: 99;
+  
+  
+      .btn {
+        padding: 10px 13px;
+      }
+    }
+  
+    .epandem {
       width: 100%;
-      height: 100hv;
+      height: 100vh;
+      position: relative;
       overflow: hidden;
-
-      .menu-toggle{
-          position: fixed;
-          top: 50px;
-          right: 0px;
-          padding: 0 $container-padding;
-          z-index: 99;
-
-          .btn{
-              padding: 10px 13px;
-          }
+  
+      &-info {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        max-width: 600px;
+        padding-right: $container-padding;
+        color: black;
+        text-align: right;
+        font-size: 28px;
+        z-index: 3;
+  
+        p {
+          font-size: 18px;
+          margin: 20px 0;
+        }
       }
-
-      .slideshow{
-          width: 100%;
-          height: 100hv;
+  
+      .cov-background {
+        background-image: url("/assets/img/slide/sld1.jpg");
+      }
+      .img_home {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        filter: opacity(0.7);
+        transition: all 2.1s ease-in-out;
+        
+        &.active {
           position: relative;
-          overflow: hidden;
-
-          &-nav{
-              position : absolute;
-              bottom: 50px;
-              right: 0;
-              padding-right: $container-padding ;
-          }
+          visibility: visible;
+          filter: opacity(1);
+        }
       }
+    }
   }
+  

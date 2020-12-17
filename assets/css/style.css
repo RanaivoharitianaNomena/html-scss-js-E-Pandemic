@@ -37,8 +37,10 @@ textarea {
 
 .btn {
   display: inline-block;
-  background-color: white;
+  padding: 10px;
+  background-color: #ffffff;
   color: #45489a;
+  font-size: 20px;
   text-align: center;
 }
 .btn:hover {
@@ -46,16 +48,12 @@ textarea {
 }
 .btn.primary {
   background-color: #45489a;
-  color: white;
-}
-.btn.secondary {
-  background-color: rgba(12, 12, 12, 0.9);
-  color: white;
+  color: #ffffff;
 }
 
 header {
   width: 100%;
-  height: 100hv;
+  height: 100vh;
   overflow: hidden;
 }
 header .menu-toggle {
@@ -68,17 +66,62 @@ header .menu-toggle {
 header .menu-toggle .btn {
   padding: 10px 13px;
 }
-header .slideshow {
+header .epandem {
   width: 100%;
-  height: 100hv;
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
-header .slideshow-nav {
+header .epandem-info {
   position: absolute;
-  bottom: 50px;
   right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 600px;
   padding-right: 10px;
+  color: black;
+  text-align: right;
+  font-size: 28px;
+  z-index: 3;
+}
+header .epandem-info p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+header .epandem .cov-background {
+  background-image: url("/assets/img/slide/sld1.jpg");
+}
+header .epandem .img_home {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: opacity(0.7);
+  transition: all 2.1s ease-in-out;
+}
+header .epandem .img_home.active {
+  position: relative;
+  visibility: visible;
+  filter: opacity(1);
+}
+
+main section {
+  padding: 10px;
+}
+main section h1 {
+  margin-right: 100px;
+  font-size: 30px;
+}
+main section h1 span {
+  display: block;
+  color: #45489a;
+}
+main section p {
+  width: 300px;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
