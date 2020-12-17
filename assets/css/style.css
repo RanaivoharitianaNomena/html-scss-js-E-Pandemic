@@ -79,7 +79,7 @@ header .epandem-info {
   transform: translateY(-50%);
   max-width: 600px;
   padding-right: 10px;
-  color: black;
+  color: #191c4e;
   text-align: right;
   font-size: 28px;
   z-index: 3;
