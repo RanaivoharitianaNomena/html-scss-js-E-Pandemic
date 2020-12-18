@@ -298,8 +298,70 @@ main .section-title p {
 }
 .about-covid .presentation-info .presentation-text {
   text-align: center;
-  color: #666666;
+  color: #524b4b;
   margin: 30px 0;
+}
+
+.symptoms-cov {
+  margin: 30px 0;
+}
+.symptoms-cov .symp-box {
+  background-color: #eeeeee;
+}
+.symptoms-cov .symp-box .symp-tabs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  border-bottom: 7px solid #5AACD7;
+}
+.symptoms-cov .symp-box .symp-tabs .symp-tab {
+  padding: 30px;
+  text-align: center;
+}
+.symptoms-cov .symp-box .symp-tabs .symp-tab:hover {
+  color: #5AACD7;
+  cursor: pointer;
+}
+.symptoms-cov .symp-box .symp-tabs .symp-tab.active {
+  background-color: #5AACD7;
+  color: #eeeeee;
+}
+.symptoms-cov .symp-box .symp-items {
+  padding: 10px 15px;
+}
+.symptoms-cov .symp-box .symp-items .tabcontent {
+  display: none;
+  animation: fade-in 1s;
+}
+.symptoms-cov .symp-box .symp-items .tabcontent:first-child {
+  display: block;
+}
+.symptoms-cov .symp-box .symp-items .symp-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #cccccc;
+}
+.symptoms-cov .symp-box .symp-items .symp-item img {
+  flex: 1;
+  margin-right: 20px;
+}
+.symptoms-cov .symp-box .symp-items .symp-item-info {
+  flex: 2;
+}
+.symptoms-cov .symp-box .symp-items .symp-item-info h3,
+.symptoms-cov .symp-box .symp-items .symp-item-info h4 {
+  margin: 5px 0;
+}
+.symptoms-cov .symp-box .symp-items .symp-item-info h4 {
+  color: #666666;
+}
+.symptoms-cov .symp-box .symp-items .symp-item-info p {
+  margin: 20px 0;
+  color: #3f6669;
 }
 
 /*# sourceMappingURL=style.css.map */

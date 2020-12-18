@@ -37,7 +37,7 @@
           </li>
           <li>
             <span class="dot"></span>
-            <a href="#symptoms-covid">Symptoms</a>
+            <a href="#symptoms-cov">Symptoms</a>
           </li>
           <li>
             <span class="dot"></span> <a href="#case-covid">Case</a>
@@ -49,6 +49,9 @@
       </aside>
 
       <main>
+
+        <!-- BEAT COVID19 -->
+
           <section id="beat-covid" class="beat-covid">
               <div class="section-title">
                   <h1>Beat <span>Covid-19</span></h1>
@@ -126,6 +129,8 @@
               </div>
           </section>
 
+          <!-- ABOUT COVID-19 -->
+
           <section id="about-covid" class="about-covid">
               <div class="section-title">
                   <h1>About <span>Covid</span></h1>
@@ -152,10 +157,72 @@
               </div>
 
           </section>
+    
+          <!-- SYMPTOMS -->
 
+          <section id="symptoms-cov" class="symptoms-cov">
+              <div class="section-title">
+                  <h1>Symptoms <span>Covid-19</span></h1>
+                  <p>
+                    Here are the informations about it.
+                </p>
+              </div>
+              <div class="symp-box">
+                  <div class="symp-tabs">
+                      <div class="symp-tab active" onclick="openTabs(event,'cough')">
+                          <h3>Cough</h3>
+                      </div>
+                      <div class="symp-tab " onclick="openTabs(event,'breathing')">
+                        <h3>Breathing</h3>
+                      </div>
+                      <div class="symp-tab " onclick="openTabs(event,'fever')">
+                        <h3>Fever</h3>
+                      </div>
+                  </div>
+
+
+                  <div class="symp-items">
+                      <div id="cough" class="tabcontent">
+                          <div class="symp-item">
+                              <img src="assets/img/cough.jpg" alt="coughimg">
+                              <div class="symp-item-info">
+                                <h3>About the coughing symptoms : </h3>
+                                <p>Most coughs are caused by viruses that inflame the throat, windpipe or lungs. 
+                                    Coughs caused by viruses can last for several weeks. 
+                                    Your body will normally fight off the virus without the need for medical treatment. </p>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div id="breathing" class="tabcontent">
+                        <div class="symp-item">
+                            <img src="assets/img/diff.png" alt="cough">
+                            <div class="symp-item-info">
+                                <h3>About the diffuclty of breathing</h3>
+                                <p>Breathing problems are when you feel you can’t get enough air, your chest feels very tight, you are breathless or you feel like you’re being suffocated. </p>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div id="fever" class="tabcontent">
+                        <div class="symp-item">
+                            <img src="assets/img/fever.jpg" alt="cough">
+                            <div class="symp-item-info">
+                                <h3>About the fever</h3>
+                                <p>A normal temperature is around 36-37°C, although it depends on your age, what you’ve been doing, the time of day and how you take the measurement. </p>
+                            </div>
+                        </div>
+                      </div>
+                     
+                      
+                  </div>
+                </div>
+          </section>
+          
 
       </main>
 
-    
+      <script src="/assets/js/slidebar.js"></script>
+      <script src="assets/js/tabs.js"></script>
 </body>
 </html>

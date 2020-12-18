@@ -1,0 +1,72 @@
+.symptoms-cov {
+    margin: 30px 0;
+  
+    .symp-box {
+      background-color: #eeeeee;
+  
+      .symp-tabs {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+        border-bottom: 7px solid $primary-color;
+  
+        .symp-tab {
+          padding: 30px;
+          text-align: center;
+  
+          &:hover {
+            color: $primary-color;
+            cursor: pointer;
+          }
+  
+          &.active {
+            background-color: $primary-color;
+            color: #eeeeee;
+          }
+        }
+      }
+  
+      .symp-items {
+        padding: 10px 15px;
+  
+        .tabcontent {
+          display: none;
+          animation: fade-in 1s;
+  
+          &:first-child {
+            display: block;
+          }
+        }
+  
+        .symp-item {
+          @include flex(flex-start, center);
+          margin-bottom: 20px;
+          padding-bottom: 20px;
+          border-bottom: 1px solid #cccccc;
+  
+          img {
+            flex: 1;
+            margin-right: 20px;
+          }
+  
+          &-info {
+            flex: 2;
+  
+            h3,
+            h4 {
+              margin: 5px 0;
+            }
+  
+            h4 {
+              color: #666666;
+            }
+  
+            p {
+              margin: 20px 0;
+              color: #3f6669;
+            }
+          }
+        }
+      }
+    }
+  }
+  
