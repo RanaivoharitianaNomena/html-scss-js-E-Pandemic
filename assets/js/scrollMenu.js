@@ -38,7 +38,7 @@ let allSections = [
   });
   
   // Change active menu on scroll
-  window.addEventListener("scroll", _.throttle(changeActiveMenu, 150));
+  window.addEventListener("scroll", changeActiveMenu, 150);
   
   // It's a good practice to use debounce or throttle on scroll events
   // we will use lodash for this
