@@ -364,4 +364,22 @@ main .section-title p {
   color: #3f6669;
 }
 
+.case-covid {
+  width: 100%;
+  height: 400px;
+}
+.case-covid h4 {
+  margin: 20px 0 10px;
+}
+.case-covid span {
+  display: block;
+  margin: 10px 0;
+  color: #666666;
+}
+.case-covid p {
+  color: #777777;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 /*# sourceMappingURL=style.css.map */
